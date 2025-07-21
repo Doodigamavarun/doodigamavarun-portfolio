@@ -11,20 +11,31 @@ const About = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           <div className="prose prose-lg">
+            <h3 className="text-xl font-semibold text-navy-deep mb-4">Objective</h3>
+            <p className="text-lg text-foreground/80 leading-relaxed mb-6">
+              To succeed in an environment of growth and excellence, which provides me good knowledge and best platform, 
+              where I want to be a member of team that dynamically work towards the growth of an organization.
+            </p>
             <p className="text-lg text-foreground/80 leading-relaxed">
-              I'm a Computer Science Engineering student skilled in Python, AI/ML, and Web Development.
-              I've led innovative projects like <span className="text-teal-accent font-semibold">Placease</span> (Alexa-based placement assistant) 
-              and <span className="text-teal-accent font-semibold">FaceTrace</span> (AI forensic sketching).
-              I enjoy building real-world solutions and exploring emerging technologies.
+              Computer Science Engineering graduate seeking a challenging and innovative engineering career. Looking 
+              forward for a position to tackle difficult projects through the use of technical skills.
             </p>
           </div>
           
           <div className="bg-card rounded-lg p-6 border border-border">
             <h3 className="text-xl font-semibold text-navy-deep mb-4">Education</h3>
-            <div className="space-y-2">
-              <h4 className="font-medium text-foreground">BTech (Computer Science Engineering)</h4>
-              <p className="text-sm text-muted-foreground">Bharath Institute of Higher Education and Research, Chennai</p>
-              <p className="text-sm text-muted-foreground">2021-2025 • CGPA: 9.4</p>
+            <div className="space-y-4">
+              <div className="border-l-4 border-teal-accent pl-4">
+                <h4 className="font-semibold text-foreground text-lg">BTech (Computer Science Engineering)</h4>
+                <p className="text-muted-foreground font-medium">Bharath Institute of Higher Education and Research</p>
+                <p className="text-sm text-muted-foreground">Chennai, India</p>
+                <div className="flex justify-between items-center mt-2">
+                  <span className="text-sm text-muted-foreground">2021 - 2025</span>
+                  <span className="bg-teal-accent/10 text-teal-accent px-2 py-1 rounded-md text-sm font-semibold">
+                    CGPA: 9.4
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
