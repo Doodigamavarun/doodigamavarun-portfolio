@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, Phone } from "lucide-react";
-import varunPortrait from "@/assets/varun-portrait.jpg";
 
 const Hero = () => {
   return (
@@ -37,7 +36,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-teal-accent/30 shadow-glow">
                 <img 
-                  src={varunPortrait} 
+                  src="/lovable-uploads/8cd16a5d-c89e-45b2-a2ae-66ff36eeb6b5.png" 
                   alt="Doodigama Varun - IT Professional and Developer"
                   className="w-full h-full object-cover"
                 />
