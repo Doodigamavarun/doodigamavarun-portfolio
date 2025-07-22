@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Linkedin, Phone, MapPin } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import { Mail, Linkedin, Phone, MapPin, Send } from "lucide-react";
 
 const Contact = () => {
   const contactMethods = [
@@ -51,7 +54,7 @@ const Contact = () => {
           </p>
           <Button variant="accent" size="lg" asChild>
             <a 
-              href="/lovable-uploads/e1210f2f-f8c8-4765-9ea7-0d8c65b64e46.png" 
+              href="https://drive.google.com/file/d/1XzQxQxQxQxQxQxQxQxQxQxQxQxQxQxQx/view?usp=sharing" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2"
@@ -68,33 +71,101 @@ const Contact = () => {
           </Button>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {contactMethods.map((method, index) => (
-            <Card key={index} className="group hover:scale-105 transition-all duration-300">
-              <CardHeader className="text-center pb-4">
-                <div className="flex justify-center mb-3">
-                  <div className="p-3 rounded-lg bg-gradient-to-br from-teal-accent/20 to-navy-deep/20">
-                    <method.icon className={`w-6 h-6 ${method.color}`} />
-                  </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Contact Methods */}
+          <div>
+            <h3 className="text-2xl font-semibold text-navy-deep mb-6">Contact Information</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {contactMethods.map((method, index) => (
+                <Card key={index} className="group hover:scale-105 transition-all duration-300">
+                  <CardHeader className="text-center pb-4">
+                    <div className="flex justify-center mb-3">
+                      <div className="p-3 rounded-lg bg-gradient-to-br from-teal-accent/20 to-navy-deep/20">
+                        <method.icon className={`w-6 h-6 ${method.color}`} />
+                      </div>
+                    </div>
+                    <CardTitle className="text-lg text-navy-deep">
+                      {method.label}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="text-center">
+                    <Button variant="ghost" asChild className="h-auto p-2 text-wrap">
+                      <a 
+                        href={method.href} 
+                        target={method.label === "LinkedIn" || method.label === "GitHub" ? "_blank" : undefined}
+                        rel={method.label === "LinkedIn" || method.label === "GitHub" ? "noopener noreferrer" : undefined}
+                        className="text-sm text-muted-foreground hover:text-teal-accent transition-colors"
+                      >
+                        {method.value}
+                      </a>
+                    </Button>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Contact Form */}
+          <div>
+            <h3 className="text-2xl font-semibold text-navy-deep mb-6">Feel Free to Contact</h3>
+            <Card className="p-6">
+              <form className="space-y-6">
+                <div className="space-y-2">
+                  <Label htmlFor="fullname" className="text-sm font-medium text-navy-deep">
+                    Full Name
+                  </Label>
+                  <Input 
+                    id="fullname" 
+                    placeholder="Enter your full name" 
+                    className="border-border focus:ring-teal-accent focus:border-teal-accent"
+                  />
                 </div>
-                <CardTitle className="text-lg text-navy-deep">
-                  {method.label}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <Button variant="ghost" asChild className="h-auto p-2 text-wrap">
-                  <a 
-                    href={method.href} 
-                    target={method.label === "LinkedIn" || method.label === "GitHub" ? "_blank" : undefined}
-                    rel={method.label === "LinkedIn" || method.label === "GitHub" ? "noopener noreferrer" : undefined}
-                    className="text-sm text-muted-foreground hover:text-teal-accent transition-colors"
-                  >
-                    {method.value}
-                  </a>
+                
+                <div className="space-y-2">
+                  <Label htmlFor="email" className="text-sm font-medium text-navy-deep">
+                    Email
+                  </Label>
+                  <Input 
+                    id="email" 
+                    type="email" 
+                    placeholder="Enter your email address" 
+                    className="border-border focus:ring-teal-accent focus:border-teal-accent"
+                  />
+                </div>
+                
+                <div className="space-y-2">
+                  <Label htmlFor="phone" className="text-sm font-medium text-navy-deep">
+                    Phone Number
+                  </Label>
+                  <Input 
+                    id="phone" 
+                    type="tel" 
+                    placeholder="Enter your phone number" 
+                    className="border-border focus:ring-teal-accent focus:border-teal-accent"
+                  />
+                </div>
+                
+                <div className="space-y-2">
+                  <Label htmlFor="message" className="text-sm font-medium text-navy-deep">
+                    Message
+                  </Label>
+                  <Textarea 
+                    id="message" 
+                    placeholder="Enter your message here..." 
+                    className="min-h-[120px] border-border focus:ring-teal-accent focus:border-teal-accent resize-none"
+                  />
+                </div>
+                
+                <Button 
+                  type="submit" 
+                  className="w-full bg-gradient-to-r from-teal-accent to-navy-deep hover:from-teal-accent/90 hover:to-navy-deep/90 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+                >
+                  <Send className="w-4 h-4 mr-2" />
+                  Submit Message
                 </Button>
-              </CardContent>
+              </form>
             </Card>
-          ))}
+          </div>
         </div>
       </div>
     </section>

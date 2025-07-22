@@ -31,8 +31,32 @@ const About = () => {
                 <p className="text-sm text-muted-foreground">Chennai, India</p>
                 <div className="flex justify-between items-center mt-2">
                   <span className="text-sm text-muted-foreground">2021 - 2025</span>
-                  <span className="bg-teal-accent/10 text-teal-accent px-2 py-1 rounded-md text-sm font-semibold">
+                  <span className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-3 py-1 rounded-full text-sm font-bold shadow-md">
                     CGPA: 9.4
+                  </span>
+                </div>
+              </div>
+              
+              <div className="border-l-4 border-orange-400 pl-4">
+                <h4 className="font-semibold text-foreground text-lg">Intermediate (PCM)</h4>
+                <p className="text-muted-foreground font-medium">Narayana Junior College</p>
+                <p className="text-sm text-muted-foreground">Hyderabad, India</p>
+                <div className="flex justify-between items-center mt-2">
+                  <span className="text-sm text-muted-foreground">2019 - 2021</span>
+                  <span className="bg-gradient-to-r from-orange-400 to-red-500 text-white px-3 py-1 rounded-full text-sm font-bold shadow-md">
+                    CGPA: 9.4
+                  </span>
+                </div>
+              </div>
+              
+              <div className="border-l-4 border-green-500 pl-4">
+                <h4 className="font-semibold text-foreground text-lg">SSC</h4>
+                <p className="text-muted-foreground font-medium">Z.P.H.S</p>
+                <p className="text-sm text-muted-foreground">Gorentla, India</p>
+                <div className="flex justify-between items-center mt-2">
+                  <span className="text-sm text-muted-foreground">2018 - 2019</span>
+                  <span className="bg-gradient-to-r from-green-500 to-teal-500 text-white px-3 py-1 rounded-full text-sm font-bold shadow-md">
+                    CGPA: 8.8
                   </span>
                 </div>
               </div>
