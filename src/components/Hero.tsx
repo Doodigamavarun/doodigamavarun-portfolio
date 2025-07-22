@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -19,10 +20,10 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="accent" size="lg" asChild>
-                <a href="#contact" className="group">
+                <Link to="/contact" className="group">
                   <Mail className="w-5 h-5" />
                   Get In Touch
-                </a>
+                </Link>
               </Button>
               <Button variant="hero" size="lg" asChild>
                 <a href="#projects" className="group">
