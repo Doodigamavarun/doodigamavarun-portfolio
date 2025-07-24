@@ -71,7 +71,7 @@ const Footer = () => {
               <Button variant="outline" size="lg" asChild>
                 <Link 
                   to="/resume"
-                  className="border-2 border-teal-accent text-teal-accent hover:bg-teal-accent hover:text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300"
+                  className="border-2 border-teal-accent text-teal-accent hover:bg-teal-accent hover:text-navy-deep font-semibold px-8 py-3 rounded-lg transition-all duration-300"
                 >
                   View Resume
                 </Link>

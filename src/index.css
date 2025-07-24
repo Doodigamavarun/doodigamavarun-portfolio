@@ -8,52 +8,52 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Portfolio theme - Navy & Teal with vibrant backgrounds */
-    --background: 240 100% 99%;
-    --foreground: 210 40% 8%;
+    /* Portfolio theme - Dark Navy & Gold theme */
+    --background: 220 30% 8%;
+    --foreground: 45 95% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 210 40% 8%;
+    --card: 220 25% 12%;
+    --card-foreground: 45 90% 90%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 40% 8%;
+    --popover: 220 30% 10%;
+    --popover-foreground: 45 85% 85%;
 
-    /* Deep navy primary */
-    --primary: 210 50% 12%;
-    --primary-foreground: 0 0% 98%;
+    /* Gold primary */
+    --primary: 45 90% 65%;
+    --primary-foreground: 220 30% 15%;
 
-    /* Light background secondary */
-    --secondary: 240 30% 96%;
-    --secondary-foreground: 210 50% 12%;
+    /* Dark background secondary */
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 45 80% 80%;
 
-    --muted: 220 30% 95%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 220 15% 20%;
+    --muted-foreground: 45 50% 60%;
 
-    /* Vibrant teal accent */
-    --accent: 174 100% 70%;
-    --accent-foreground: 210 50% 12%;
+    /* Vibrant gold accent */
+    --accent: 45 95% 70%;
+    --accent-foreground: 220 30% 15%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 174 100% 70%;
+    --border: 220 20% 25%;
+    --input: 220 20% 25%;
+    --ring: 45 95% 70%;
 
     /* Custom portfolio tokens with enhanced colors */
-    --hero-bg: 210 50% 12%;
-    --hero-text: 0 0% 98%;
-    --teal-accent: 174 100% 70%;
-    --navy-deep: 210 50% 12%;
-    --section-bg: 240 50% 98%;
+    --hero-bg: 220 30% 8%;
+    --hero-text: 45 95% 95%;
+    --teal-accent: 45 95% 65%;
+    --navy-deep: 220 30% 15%;
+    --section-bg: 220 25% 10%;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--navy-deep)), hsl(210 45% 15%));
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(210 40% 98%));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--navy-deep)), hsl(220 25% 18%));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(220 20% 15%));
     
     /* Shadows */
-    --shadow-elegant: 0 10px 25px -5px hsl(var(--navy-deep) / 0.1);
-    --shadow-glow: 0 0 30px hsl(var(--teal-accent) / 0.3);
+    --shadow-elegant: 0 10px 25px -5px hsl(var(--navy-deep) / 0.3);
+    --shadow-glow: 0 0 30px hsl(var(--teal-accent) / 0.4);
 
     --radius: 0.5rem;
 
