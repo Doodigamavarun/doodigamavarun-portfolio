@@ -5,13 +5,15 @@ const Testimonials = () => {
   const testimonials = [
     {
       quote: "Varun exceeded our expectations with his innovative thinking and technical skills.",
-      author: "Priya Sharma",
-      role: "Project Mentor"
+      author: "Selva Priya",
+      role: "Project Mentor",
+      location: "Hyderabad, Telangana"
     },
     {
       quote: "His expertise in AI and problem-solving mindset made a significant impact.",
-      author: "Ramesh Kumar", 
-      role: "AI Research Collaborator"
+      author: "N.Fathima Shifna", 
+      role: "AI Research Collaborator",
+      location: "Hyderabad, Telangana"
     }
   ];
 
@@ -46,6 +48,7 @@ const Testimonials = () => {
                       <div>
                         <p className="font-semibold text-navy-deep">{testimonial.author}</p>
                         <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                        <p className="text-xs text-muted-foreground">{testimonial.location}</p>
                       </div>
                     </div>
                   </div>
