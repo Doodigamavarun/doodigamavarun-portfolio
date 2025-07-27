@@ -69,14 +69,12 @@ const Footer = () => {
                 </Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a 
-                  href="https://drive.google.com/file/d/1XzQxQxQxQxQxQxQxQxQxQxQxQxQxQxQx/view?usp=sharing" 
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link 
+                  to="/resume"
                   className="border-2 border-teal-accent text-teal-accent hover:bg-teal-accent hover:text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300"
                 >
-                  Download Resume
-                </a>
+                  View Resume
+                </Link>
               </Button>
             </div>
           </div>
