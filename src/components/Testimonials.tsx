@@ -6,12 +6,12 @@ const Testimonials = () => {
     {
       quote: "Varun exceeded our expectations with his innovative thinking and technical skills.",
       author: "Selva Priya",
-      role: "Project Mentor"
+      role: "Selva Priya"
     },
     {
       quote: "His expertise in AI and problem-solving mindset made a significant impact.",
-      author: "N.Fathima Shifna", 
-      role: "AI Research Collaborator"
+      author: "Fathima Shifna", 
+      role: "Fathima Shifna"
     }
   ];
 
