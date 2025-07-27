@@ -8,8 +8,8 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Portfolio theme - Navy & Teal */
-    --background: 0 0% 98%;
+    /* Portfolio theme - Navy & Teal with vibrant backgrounds */
+    --background: 240 100% 99%;
     --foreground: 210 40% 8%;
 
     --card: 0 0% 100%;
@@ -23,10 +23,10 @@ All colors MUST be HSL.
     --primary-foreground: 0 0% 98%;
 
     /* Light background secondary */
-    --secondary: 210 40% 96%;
+    --secondary: 240 30% 96%;
     --secondary-foreground: 210 50% 12%;
 
-    --muted: 210 40% 95%;
+    --muted: 220 30% 95%;
     --muted-foreground: 215 16% 47%;
 
     /* Vibrant teal accent */
@@ -40,12 +40,12 @@ All colors MUST be HSL.
     --input: 214 32% 91%;
     --ring: 174 100% 70%;
 
-    /* Custom portfolio tokens */
+    /* Custom portfolio tokens with enhanced colors */
     --hero-bg: 210 50% 12%;
     --hero-text: 0 0% 98%;
     --teal-accent: 174 100% 70%;
     --navy-deep: 210 50% 12%;
-    --section-bg: 0 0% 98%;
+    --section-bg: 240 50% 98%;
     
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--navy-deep)), hsl(210 45% 15%));
