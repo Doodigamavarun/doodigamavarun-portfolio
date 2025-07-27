@@ -5,13 +5,13 @@ const Testimonials = () => {
   const testimonials = [
     {
       quote: "Varun exceeded our expectations with his innovative thinking and technical skills.",
-      author: "Selva Priya",
-      role: "Selva Priya"
+      author: "Priya Sharma",
+      role: "Project Mentor"
     },
     {
       quote: "His expertise in AI and problem-solving mindset made a significant impact.",
-      author: "Fathima Shifna", 
-      role: "Fathima Shifna"
+      author: "Ramesh Kumar", 
+      role: "AI Research Collaborator"
     }
   ];
 
